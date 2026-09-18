@@ -11,7 +11,6 @@ function canRide(height){
 }
 canRide(height); */
 
-
 /* const key = 4;
 
 switch (key) {
@@ -32,14 +31,20 @@ switch (key) {
     console.log("your not on earth");
 } */
 
-
-
 //Combine && and ||: write a condition for a movie ticket discount that applies if the person is a student or a senior, and it's a weekday.
 
-const age = student
-const day = weekday
+const senior = false;
+const weekend = false;
 
-if ((age === senior) || day === weekend){
-    console.log("You get a very good discount!")
+function discount(senior, weekend) {
+  if (senior === true && weekend === true) {
+    console.log("You get a very good discount because ur old and weekend!");
+  } else if (senior === true && weekend === false) {
+    console.log("You just get a senior discount.");
+  } else if (senior === false && weekend === true) {
+    console.log("Just weekend discount.");
+  } else {
+    console.log("No discount for u brokie!!!");
+  }
 }
-else if 
+discount(senior, weekend);
